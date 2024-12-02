@@ -3,7 +3,7 @@
 const images = [
     { src: 'imagens/penguin.png', title: 'Fancy Penguin', category: 'Animals' },
     { src: 'imagens/catwinter.png', title: 'Cat Winter time', category: 'Animals' },
-    { src: 'imagens/violão_.png', title: 'Squirrel playing instrument', category: 'Animals' },
+    { src: 'imagens/violao.png', title: 'Squirrel playing instrument', category: 'Animals' },
     { src: 'imagens/cowboy.png', title: 'Cat Cowboy', category: 'Animals' },
     { src: 'imagens/doglazzy.png', title: 'Lazzy Dog', category: 'Animals' },
     { src: 'imagens/pet.png', title: 'Chicken Running', category: 'Animals' },

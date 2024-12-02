@@ -1,4 +1,5 @@
 
+// Script for Gallery Page
 
 const images = [
     { src: 'imagens/penguin.png', title: 'Fancy Penguin', category: 'Animals' },

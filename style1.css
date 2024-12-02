@@ -1,4 +1,4 @@
-/* Prompt page */
+/* CSS for the Prompt, About and  Resources pages */
 
 * {
     margin: 0;
@@ -27,6 +27,13 @@ p {
     overflow: auto;
   }
  
+@font-face {
+    font-family: Fontenova;
+    src: url("font/Fontenova-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 h3 {
     padding-left: 40px;
     padding-right: 40px;
@@ -40,8 +47,11 @@ h3 {
 a {
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 20px;
 }
   
+/* Banner  */ 
+
 .banner {
     display: flex;
     align-items: center;
@@ -50,15 +60,8 @@ a {
     height: auto;
     margin: 0 auto;
 }
-
-/*.name {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    color:black;
-    margin-right: 20 px;
-  }
-    */
   
+/* Navigation Bar */
 .navbar {
     width: 100%;
     background-color: white;
@@ -68,7 +71,6 @@ a {
     align-items: center;
   }
 
-  
 .navlinks {
     list-style: none;
     display: flex;
@@ -119,6 +121,7 @@ a {
     transition: background-color 0.3s;
 }
 
+/* Content */ 
 .content {
     padding-left: 50px;
     justify-content: center;
@@ -143,6 +146,8 @@ a {
     gap: 15px; 
     padding: 20px;
 }
+ 
+/* Colorful Boxes main page */ 
 
 .generator {
     display: flex;
@@ -202,9 +207,9 @@ a {
     padding-top: 10px;
 }
 
-#generateButton, #generateButton2 {
+#generateButton {
     height: 60px;
-    min-width: 200px;
+    min-width: 410px;
     border-radius: 10px;
     font-size: 20px;
     background-color: #b0a9c7;
@@ -217,7 +222,7 @@ a {
 }
 
 
-/* Timer */
+/* Timer buttons and display */
 
 .timerContainer {
     display: flex;
@@ -270,6 +275,38 @@ a {
     margin-left: 10px;
 }
 
+/* Resources page */ 
+
+.fotos {
+    background-color: #e0f2f6;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.cores {
+    background-color: #caecf2;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.referencias {
+    background-color: #b5e8f2;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.footer {
+    font-family: "Fontenova";
+    font-size: 30px;
+    text-align: center;
+}
+
 /*Responsive*/
 
 @media (max-width: 767px) {
@@ -307,5 +344,23 @@ a {
         width: 100%;                
         margin-left: 5px;           
         margin-top: 10px;           
+    }
+}
+
+@media (max-width: 768px) {
+    .referencias, .cores, .fotos {
+        margin-left: 20px;  
+        margin-right: 20px; 
+        padding: 15px; 
+        display: block;
+        height: auto;
+    }
+
+    .referencias, .cores, .fotos h3 {
+        font-size: 1.6rem; 
+    }
+
+    .referencias a, .cores a, .fotos a {
+        font-size: 1.2rem; 
     }
 }

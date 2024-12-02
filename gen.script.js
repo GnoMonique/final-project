@@ -1,8 +1,9 @@
 
+// Script for Generator page
+
 // Art Prompt Generator 
 const button = document.getElementById("generateButton");
 const display = document.getElementById("prompt");
-const button2 = document.getElementById("generateButton2")
 const display2 = document.getElementById("details")
 
 
@@ -15,6 +16,7 @@ function generatePrompt () {
     return randomValue;
 }
 
+// Generate Button
 button.addEventListener("click", function () {
     const randomValue = generatePrompt();
     display.textContent = randomValue;
@@ -23,7 +25,6 @@ button.addEventListener("click", function () {
 });
 
 // Generate Details
-
 const details = ["Running", "Gardening", "Wizard", "Doing sports", "Scientist", "Traveling", "Singing", "Fancy", "Painter/Artist", "Sailor", "Baking", "Reading", "At the beach", "Winter-time", "Astronaut", "Cowboy"];
 
 function generateDetails () {
@@ -31,12 +32,6 @@ function generateDetails () {
     const randomValor = details[randomI];
     return randomValor;
 }
-
-/*button2.addEventListener("click", function () {
-    const randomValor = generateDetails();
-    display2.textContent = randomValor;
-});
-*/
 
 // Timer
 

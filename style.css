@@ -1,7 +1,8 @@
+
+/* CSS for Gallery Page */ 
 * {
   margin: 0;
   padding: 0;
-  /*box-sizing: border-box;*/
 }
 
 body {
@@ -67,7 +68,7 @@ body {
 }
  
 
-/* Galery Page */ 
+/* Gallery Page */ 
 
 .pageContainer {
   display: flex;
@@ -137,7 +138,21 @@ body {
   transform: scale (1);
 }
 
+/* Footer*/ 
+.footer {
+  font-family: "Fontenova";
+  font-size: 30px;
+  text-align: center;
+}
 
+@font-face {
+  font-family: Fontenova;
+  src: url("font/Fontenova-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Responsive */ 
 @media (max-width: 767px) {
   .pageContainer {
       flex-direction: column; 

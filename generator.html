@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="style1.css"> 
+</head>
+<body>
+
+  <div class="banner">
+    <img src="imagens/teste1.png">
+    </div>
+
+    <nav class="navbar">
+      <ul class="navlinks">
+        <li><a class= "navgallery" href="index.html">Gallery</a></li> 
+        <li><a class= "navresources" href="resources.html">Resources</a></li> 
+        <li><a class= "navabout" href="about.html">About</a></li>
+      </ul>
+    </nav>
+  
+   <div class="content"> 
+    <div class="generator"> 
+      <h3>Generate a random art prompt!</h3>
+      <p> The following buttons will generate a random prompt for you in two parts: first, a character. And then, a detail that could be an action, an adjective, a profession...</p>
+      <br>
+
+      <div class="display">
+        <div id="prompt"> Character </div>
+        <div id="details"> Detail</div>
+     </div>
+
+      <div class="displayButtons">
+        <button id="generateButton">Generate</button>
+       <button id="generateButton2">Generate</button>
+      </div>
+   </div>
+    
+   <br>
+  <br>
+  <br>
+  <div class="tempo"> 
+    <h3>Set a timer to your practice!</h3>
+    <p> We suggest a quick round (or more) of 5 minutes to warm up! </p>
+
+    <br>
+    
+    <div id="messageContainer">Time remaining!</div>
+  
+    <div class="timerContainer">
+      <div id="timer">05:00</div>
+    </div>
+
+    <div class="timerButtons">
+      <button id="start">Start!</button>
+      <button id="restart">Reset timer!</button>
+    </div>
+  </div>
+  </div>
+  <br>
+    <br>
+    <br>
+
+  <script src="./gen.script.js"></script>
+
+</body>
+</html>

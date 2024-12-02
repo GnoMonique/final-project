@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*box-sizing: border-box;*/
+}
+
+body {
+    background-color: white;
+}
+
+/* Banner */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  gap: 10px
+}
+
+.navgenerator {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: black;
+  background-color: #b6d7e6;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.navresources {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: black;
+  background-color: #ddc2e2;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.navabout {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: black;
+  background-color: #d1bfe3;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+ 
+
+/* Galery Page */ 
+
+.pageContainer {
+  display: flex;
+  gap: 20px; 
+  padding: 20px;
+  margin-left: 40px;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 10px;
+  flex-grow: 1;
+  min-width: 200px;
+  margin-right: 50px;
+  }
+  
+.gallery-item {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.sidebar {
+  margin-left: 20px;
+  width: 100px;
+  padding: 20px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.filterButtons {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.filter-btn {
+  display:block;
+  padding: 5px 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  gap: 10px;
+  color: black;
+  background-color: #f4f1d5;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#reset {
+  padding: 5px 10px;
+  font-size: 1rem;
+  gap: 10px;
+  color: black;
+  background-color: #f4f1d5;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  }
+
+
+.filter-btn:active {
+  background-color:#f5efb9;
+  transform: scale (1);
+}
+
+
+@media (max-width: 767px) {
+  .pageContainer {
+      flex-direction: column; 
+      padding: 10px; 
+      gap: 10px; 
+  }
+}

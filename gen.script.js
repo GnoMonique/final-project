@@ -58,9 +58,12 @@ function updateTimerDisplay (){
   if (timeRemaining>30) {
     timerDisplay.textContent= `${formatTime(timeRemaining)}`;
     message.textContent = "Time remaining!"
+  } else if (timeRemaining > 0){
+    timerDisplay.textContent= `${formatTime(timeRemaining)}`;
+    message.textContent= "Time is almost up!"
   } else {
     timerDisplay.textContent= `${timeRemaining}`;
-    message.textContent= "Time is almost up!"
+    message.textContent = "Time is up!"
   }
 }
 
@@ -80,7 +83,7 @@ function startPauseTimer() {
               if (timeRemaining <= 0) {
                   clearInterval(timerInterval);
                   isRunning = false;
-                  buttonStart.textContent = "Start Timer";
+                  buttonStart.textContent = "Start";
               }
           }, 1000);
           isRunning = true;
@@ -106,8 +109,6 @@ function resetTimer (){
 }
 
 buttonRestart.addEventListener("click", resetTimer)
-
-
 
 
 

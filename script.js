@@ -10,7 +10,7 @@ const images = [
     { src: 'imagens/pet.png', title: 'Chicken Running', category: 'Animals' },
     { src: 'imagens/snow.png', title: 'Dog Winter time', category: 'Animals' },
     { src: 'imagens/hare.png', title: 'Hare Running', category: 'Animals' },
-    { src: 'imagens/pet.png', title: 'Chicken Running', category: 'Nature' },
+    { src: 'imagens/flores.png', title: 'Chicken Running', category: 'Nature' },
     { src: 'imagens/robot.png', title: 'Robot Cat', category: 'Robot' }
   ];
 

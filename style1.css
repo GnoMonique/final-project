@@ -44,6 +44,10 @@ h3 {
     justify-content: center;
 }
 
+.contentTexto h3 {
+    color: #baa2d2;
+}
+
 a {
     padding-left: 40px;
     padding-right: 40px;
@@ -81,7 +85,7 @@ a {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    background-color: #b6d7e6;
+    background-color: #f9ebc1;
     border: none;
     border-radius: 2px;
     cursor: pointer;
@@ -92,9 +96,9 @@ a {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    background-color: #ddc2e2;
+    background-color:#bee1f1;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
@@ -105,7 +109,7 @@ a {
     color: black;
     background-color: #d1bfe3;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
@@ -114,9 +118,9 @@ a {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    background-color: #bcb6e6;
+    background-color: #ddc2e2;
     border: none;
-    border-radius: 2px;
+    border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -162,6 +166,14 @@ a {
     background-color: #f7ebf6;
     border: 2px  #ab9dd5;
     border-radius: 10px;
+}
+
+.generator h3 {
+    text-align: center;
+}
+
+.tempo h3 {
+    text-align: center;
 }
 
 .tempo {
